@@ -1,4 +1,17 @@
 sinatra-template
 ================
 
-Sinatra template with Bootstrap, Compass, Slim, CoffeeScript, Sass, Asset pipeline…
+A Sinatra template.
+
+Features: Bootstrap, Compass, Slim, CoffeeScript, Sass, Asset pipeline.
+
+Install dependencies
+-----
+
+    bower install
+    bundle
+
+Start server
+-----
+
+    puma config.ru -e development
