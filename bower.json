@@ -1,8 +1,6 @@
 {
   "name": "App",
   "dependencies": {
-    //"normalize-css": "*",
-    //"bootstrap": "*"
     "jquery": "*"
   }
 }
