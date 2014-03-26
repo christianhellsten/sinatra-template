@@ -1,0 +1,10 @@
+doctype 5
+html.fullscreen class=body_classes lang=I18n.locale
+  == partial :'layouts/_head'
+  body.fullscreen class=body_classes
+    .site-wrapper
+      .site-wrapper-inner
+        .fullscreen-container
+          == partial :'layouts/_header'
+          == yield
+          == partial :'layouts/_footer'

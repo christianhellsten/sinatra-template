@@ -1,0 +1,7 @@
+head
+  meta content='text/html; charset=utf-8' http-equiv='Content-Type'
+  meta content="width=device-width, maximum-scale=2.0, user-scalable=1" name="viewport"
+  title == (meta(:meta_title)||meta(:title)||App.settings.app.name)
+  meta content=(meta(:description)||meta(:title)) name='description'
+  ==css_tag(:application)
+  ==js_tag(:application)

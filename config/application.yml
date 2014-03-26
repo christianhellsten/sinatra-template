@@ -1,0 +1,36 @@
+defaults: &defaults
+  app:
+    name: Sinatra Template
+  features:
+    - Bootstrap
+    - Compass
+    - Slim
+    - CoffeeScript
+    - Sass
+    - Asset pipeline
+
+  deployment:
+    # Path to git repo
+    git: /var/git/google.git
+    # Domain to deploy to
+    domain: www.google.com
+    # Path to deploy to
+    deploy_to: /var/www/google
+    # Environment to run app in
+    environment: production
+    # Files and directories that are shared between releases
+    shared_paths: ['log', 'tmp', 'config/database.yml', ".env.production"]
+    # Puma process PID
+    pid: "/var/www/google/current/tmp/pids/puma-staging.pid"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

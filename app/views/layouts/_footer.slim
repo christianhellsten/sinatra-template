@@ -1,0 +1,8 @@
+footer.container
+  .col-md-12
+    .row
+      .mastfoot
+        .inner
+          - if App.environment != :production
+            p#app-environment == version_string
+/!  #{version_string}
