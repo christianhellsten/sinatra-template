@@ -16,4 +16,6 @@ Install dependencies
 Start server
 -----
 
-    puma config.ru -e development
+    puma
+    puma -p 3000
+    puma -e production
